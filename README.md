@@ -1,6 +1,9 @@
 # Simu5G-tutorial-de-simulacao
 Tutorial de como fazer simulações iniciais no Simu5G usando Linux. Tutorial desenvolvido colaborativamente como parte da avaliação da matéria MAC0463 do IME-USP no 2osem/2021.
 
+# Vídeo-tutorial
+https://drive.google.com/file/d/13D2YOovzqDwimOKkcdCVwV4F-IWU6MxZ/view?usp=sharing
+
 # Introdução ao 5G
 
 A cada geração de redes móveis, importantes avanços são feitos e novas possibilidades surgem. A chegada da rede móvel de quinta geração é um importante passo para muitas aplicações que exigem uma **baixa latência** e uma **banda maior** do que as soluções baseadas em LTE. Dessa forma é importante entender mais sobre essa rede que em breve vai fazer parte do nosso dia a dia, e ainda, entender suas principais limitações e desafios.
