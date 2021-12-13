@@ -60,6 +60,27 @@ Caso seja interessante, pode-se fazer a simulação com novos parâmetros — o 
 
 Assim feito, o arquivo ‘omentpp.ini’ está pronto para ser usado com novos parâmetros de simulação.
 
+## E. Experimento
+
+Para avaliar o uso do simulador, fizemos uma simulação tdd com os parâmetros padrões e outra simulação alterando os seguintes parâmetros
+
+- mobility.constraintAreaMaxZ : 0 -> 5m
+- sctp.nagleEnabled: false -> true
+- pilotMode: ROBUST_CQI -> MAX_CQI
+- blerShift: 5 -> 3
+
+De forma a identificar a diferenças geradas, escolhemos algumas estatísticas importantes para averiguar qual diferença foi causada pela escolha dos parâmetros. As estatísticas foram:
+
+- rcvdSinrDl: Sinr significa Signal to interference & Noise Ratio e mede a qualidade do sinal recebido. Além disso, Dl significa Downlink.
+- rlcPacketLossDL: RLC significa Radio Link Control parte importa do protocolo de enlace que faz segmentação e a reagrupamento de pacotes, além de lidar com protocolos ARQ (Automatic Repeat and reQuest).
+- sentPacketToLowerLayer: Indica a quantidade de pacotes enviados para uma camada inferior
+- rlcCellThroughputDl: Cell throughput está relacionado com a razão de pacotes transmitidos com sucesso.
+- macDelayDl: Está relacionado com o seu RTT (tempo de ida e volta).
+- harqErrorRateDl: Harq signifcia Hybrid automatic repeat request, harq error rate está relacionado com a quantidade de pacotes defeituosos.
+
+A figura abaixo mostra as diferenças das  estatísticas geradas.
+
+![Param_barplot](https://user-images.githubusercontent.com/44951354/145737330-6876c290-cd4c-414a-832d-8b505ce1bc8f.png)
 
 
 ---------------------------
