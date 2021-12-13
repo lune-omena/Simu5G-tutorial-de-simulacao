@@ -28,10 +28,11 @@ Simuladores são um ótimo jeito de se testar novas tecnologias para prever como
 
 2. **Criar ambiente virtual / Virtual Machine**
 
-   Após o download, é necessário que o usuário instale um ambiente de virtualização (como o [Oracle VM VirtualBox](https://www.virtualbox.org/)) para rodá-lo.
-   
-   Importe a imagem do Simu5G no ambiente de virtualização.
+Após o download, é necessário que o usuário instale um ambiente de virtualização (como o [Oracle VM VirtualBox](https://www.virtualbox.org/)) para rodá-lo. Download para Linux: [VitualBox for Linux](https://www.virtualbox.org/wiki/Linux_Downloads)
 
+   Importe a imagem do Simu5G no ambiente de virtualização. Dar duplo clique no arquivo Simu5G pode ser o suficiente.
+
+   Obs: É necessário cerca de 10GB livres no disco rígido para importar a imagem.
 
 
 ## B. Inicialização
